@@ -5,11 +5,6 @@ import ShapeLayer from "./ShapeLayer";
 export default function Map({ shapefile }) {
   const [map, setMap] = useState(null);
 
-  useEffect(() => {
-    if (shapefile) {
-    }
-  }, [shapefile]);
-
   return (
     <MapContainer
       center={[50.505, -0.09]}
