@@ -7,42 +7,8 @@ export default function Map({ shapefile }) {
 
   useEffect(() => {
     if (shapefile) {
-      console.log("from map:", shapefile);
-      // map.flyTo(shapefile.bbox);
     }
   }, [shapefile]);
-  // useEffect(() => {
-  //   if (shapefile) {
-  //     console.log("Adding shapefile to map", shapefile);
-  //     // create new shapefile layer (assuming L.Shapefile plugin available and accepts File/Blob)
-  //     // map.addLayer(
-
-  //     // )
-  //     // const shpfile = new L.Shapefile(shapefile, {
-  //     //   onEachFeature: function (feature, layer) {
-  //     //     if (feature.properties) {
-  //     //       layer.bindPopup(
-  //     //         Object.keys(feature.properties)
-  //     //           .map(function (k) {
-  //     //             return k + ": " + feature.properties[k];
-  //     //           })
-  //     //           .join("<br />"),
-  //     //         {
-  //     //           maxHeight: 200,
-  //     //         }
-  //     //       );
-  //     //     }
-  //     //   },
-  //     // });
-  //     // shpfile.addTo(mapRef.current);
-  //     // layerRef.current = shpfile;
-  //     // try {
-  //     //   mapRef.current.flyToBounds(shpfile.getBounds());
-  //     // } catch (e) {
-  //     //   console.warn("Could not fit bounds", e);
-  //     // }
-  //   }
-  // }, []);
 
   return (
     <MapContainer
