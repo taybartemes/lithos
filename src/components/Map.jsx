@@ -1,5 +1,5 @@
-import React, { useEffect, useRef, useState } from 'react';
-import { MapContainer, TileLayer, useMap, GeoJSON } from 'react-leaflet';
+import React, { useState } from 'react';
+import { MapContainer, TileLayer, ZoomControl } from 'react-leaflet';
 import ShapeLayer from './ShapeLayer';
 
 export default function Map({ shapefile }) {
@@ -10,6 +10,7 @@ export default function Map({ shapefile }) {
             center={[50.505, -0.09]}
             ref={setMap}
             zoom={9}
+            zoomControl={false}
             scrollWheelZoom={false}
             style={{ height: '100%', width: '100%', zIndex: 2 }}
         >
@@ -17,6 +18,7 @@ export default function Map({ shapefile }) {
                 attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
                 url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
             />
+            <ZoomControl position="bottomright" />
             <ShapeLayer shapefile={shapefile} map={map}></ShapeLayer>
         </MapContainer>
     );
