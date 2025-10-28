@@ -1,6 +1,6 @@
-import React from "react";
-import MainLayout from "./components/MainLayout";
+import React from 'react';
+import MainLayout from './components/MainLayout';
 
 export default function App() {
-  return <MainLayout></MainLayout>;
+    return <MainLayout></MainLayout>;
 }
