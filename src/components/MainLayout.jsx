@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import Map from "./Map";
 
 import FileDropZone from "./DropZone";
+import Sidebar from "./Sidebar";
 
 export default function MainLayout() {
   const [shapefile, setShapefile] = useState();
@@ -12,10 +13,12 @@ export default function MainLayout() {
   return (
     <div style={{ height: "100%", width: "100%" }}>
       <Map shapefile={shapefile} />
-      <FileDropZone
-        shapefile={shapefile}
-        onShapefileChange={handleShapefileChange}
-      />
+      <Sidebar>
+        <FileDropZone
+          shapefile={shapefile}
+          onShapefileChange={handleShapefileChange}
+        />
+      </Sidebar>
     </div>
   );
 }

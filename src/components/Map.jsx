@@ -11,7 +11,7 @@ export default function Map({ shapefile }) {
       ref={setMap}
       zoom={9}
       scrollWheelZoom={false}
-      style={{ height: "80%", width: "80%" }}
+      style={{ height: "100%", width: "100%", zIndex: 2 }}
     >
       <TileLayer
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
