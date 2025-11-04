@@ -1,8 +1,8 @@
-import React from 'react';
-import { GeoJSON } from 'react-leaflet';
-import { featureCollection } from '@turf/helpers';
 import { bbox } from '@turf/bbox';
 import { bboxPolygon } from '@turf/bbox-polygon';
+import { featureCollection } from '@turf/helpers';
+import React from 'react';
+import { GeoJSON } from 'react-leaflet';
 
 export default function ShapeLayer({ shapefile, map }) {
     if (shapefile) {

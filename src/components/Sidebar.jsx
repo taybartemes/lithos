@@ -1,18 +1,19 @@
-import React from 'react';
-import { styled, useTheme } from '@mui/material/styles';
-import Drawer from '@mui/material/Drawer';
-import IconButton from '@mui/material/IconButton';
-import Divider from '@mui/material/Divider';
-import List from '@mui/material/List';
-import ListItemIcon from '@mui/material/ListItemIcon';
-import Box from '@mui/material/Box';
-import CssBaseline from '@mui/material/CssBaseline';
-import MuiAppBar from '@mui/material/AppBar';
-import Toolbar from '@mui/material/Toolbar';
-import MenuIcon from '@mui/icons-material/Menu';
+// This component is taken from the MUI persistent drawer example https://github.com/mui/material-ui/blob/v7.3.4/docs/data/material/components/drawers/PersistentDrawerRight.js
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
+import MenuIcon from '@mui/icons-material/Menu';
 import UploadFileIcon from '@mui/icons-material/UploadFile';
+import MuiAppBar from '@mui/material/AppBar';
+import Box from '@mui/material/Box';
+import CssBaseline from '@mui/material/CssBaseline';
+import Divider from '@mui/material/Divider';
+import Drawer from '@mui/material/Drawer';
+import IconButton from '@mui/material/IconButton';
+import List from '@mui/material/List';
+import ListItemIcon from '@mui/material/ListItemIcon';
+import Toolbar from '@mui/material/Toolbar';
+import { styled, useTheme } from '@mui/material/styles';
+import React from 'react';
 
 const drawerWidth = 240;
 

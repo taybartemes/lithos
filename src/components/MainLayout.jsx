@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from 'react';
-import Map from './Map';
+import React, { useState } from 'react';
 
 import FileDropZone from './DropZone';
+import Map from './Map';
 import Sidebar from './Sidebar';
 
 export default function MainLayout() {
